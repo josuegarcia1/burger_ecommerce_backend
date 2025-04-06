@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.models.cart import CartItem
+from app.db.models.cart import CartItem
 from app.schemas.cart import CartItemCreate, CartItemUpdate
 
 class CartRepository:

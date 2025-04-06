@@ -1,9 +1,42 @@
+# ===== CORE =====
 fastapi==0.95.2
 uvicorn==0.22.0
-sqlalchemy==2.0.15
-pydantic==1.10.7
-passlib==1.7.4
-python-jose==3.3.0
-python-multipart==0.0.6
+
+# ===== DATABASE =====
+sqlalchemy==1.4.54
+alembic==1.13.1
+
+# ===== SECURITY =====
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+pyjwt==2.8.0
+
+# ===== AWS =====
 boto3==1.26.142
+botocore==1.29.165
+
+# ===== ENVIRONMENT =====
 python-dotenv==1.0.0
+
+# ===== DATA VALIDATION =====
+pydantic==1.10.21
+email-validator==2.1.1
+
+# ===== ASYNC/HTTP =====
+httpx==0.27.0
+anyio==4.3.0
+
+# ===== DEVELOPMENT =====
+pytest==8.2.1
+pytest-asyncio==0.23.6
+python-multipart==0.0.6
+watchfiles==0.20.0  # Versión sin requisito de Rust
+
+# ===== TESTING =====
+factory-boy==3.3.0
+faker==25.8.0
+requests==2.31.0
+
+# ===== PRODUCTION (OPCIONAL) =====
+gunicorn==21.2.0
+# uvloop removido - No compatible con Windows
